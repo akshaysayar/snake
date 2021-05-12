@@ -20,7 +20,6 @@ def game(button,inputs):
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1700)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1700)
     
-   
     length = 15
     speed = 10
     choices = [i for i in range(50,600,10)]
