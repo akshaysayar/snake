@@ -7,7 +7,7 @@ import numpy as np
 import pickle
 
 class Snake():
-    
+
     def __init__(self):
 
         self.LReg = pickle.load(open("/home/akshay/data/personal/Python_projects/Snake/model/RF_v2.pkl", 'rb'))
@@ -236,6 +236,9 @@ class Snake():
             direction = dir[(dir.index(previous)+1)%4]
         self.direction = direction
 
-if __name__ == "__main__":
+def main():
     snake = Snake()
     snake.game()
+    
+if __name__ == "__main__":
+    main()
